@@ -2,69 +2,331 @@
 <html lang="en">
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
+
+    <!-- ====== Google Fonts ====== -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet">
+
+    <!-- ====== ALL CSS ====== -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/lightbox.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
 </head>
 
-<body>
-    <header>
-        <ul class="nav_bar">
-            <li class="nav_bar_item"><a href="index.html">Accueil</a></li>
-            <li class="nav_bar_item"><a href="presentation.html">Présentation</a></li>
-            <li class="nav_bar_item"><a href="mes-projets.html">Mes Projets</a></li>
-            <li class="nav_bar_item"><a href="me-contacter.html">Me Contacter</a></li>
-        </ul>
+<body data-spy="scroll" data-target=".navbar-nav">
+    
+     <!-- Preloader -->
+    <div class="preloader">
+        <div class="spinner">
+            <div class="cube1"></div>
+            <div class="cube2"></div>
+        </div>
+    </div>
+    <!-- // Preloader -->
+    
+
+    <!-- ====== Header ====== -->
+    <header id="header" class="header">
+        <!-- ====== Navbar ====== -->
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+
+                <!-- Mobile Menu -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-expanded="false"><span><i class="fa fa-bars"></i></span></button>
+                <!-- Mobile Menu -->
+
+                <div class="collapse navbar-collapse main-menu" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active"><a class="nav-link" href="#home">INDEX</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">PRESENTATION</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">MES PROJETS</a></li>
+                        <li class="nav-item"><a class="nav-link pr0" href="#contact">ME CONTACTER</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- ====== // Navbar ====== -->
     </header>
-    <main>
+    <!-- ====== // Header ====== -->
 
-        <section class="landing">
-            
-            <figure>
-                <h1>Mon Portfolio</h1>
-            </figure>
+    <!-- ====== Hero Area ====== -->
+    <div class="hero-aria" id="home">
+        <!-- Hero Area Content -->
+        <div class="container">
+            <div class="hero-content h-100">
+                <div class="d-table">
+                    <div class="d-table-cell">
+                        <h2 class="text-uppercase">Mathéo Guillevic</h2>
+                        <a href="#about" class="button smooth-scroll">En apprendre plus</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // Hero Area Content -->
+        <!-- Hero Area Slider -->
+        <div class="hero-area-slids owl-carousel">
+            <div class="single-slider">
+                <!-- Single Background -->
+                <div class="slider-bg" style="background-image: url(assets/images/hero-area/Laboratory.png)"></div>
+                <!-- // Single Background -->
+            </div>
+            <div class="single-slider">
+                <!-- Single Background -->
+                <div class="slider-bg" style="background-image: url(assets/images/hero-area/Reactor.png)"></div>
+                <!-- // Single Background -->
+            </div>
+            <div class="single-slider">
+                <!-- Single Background -->
+                <div class="slider-bg" style="background-image: url(assets/images/hero-area/Reactor.png)"></div>
+                <!-- // Single Background -->
+            </div>
+        </div>
+        <!-- // Hero Area Slider -->
+    </div>
+    <!-- ====== //Hero Area ====== -->
+
+    <!-- ====== Featured Area ====== -->
+    <section id="featured" class="section-padding pb-70">
+        <div class="container">
+            <div class="row">
+                <!-- single featured item -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-featured-item-wrap">
+                        <h3><a href="#about">Présentation</a></h3>
+                        <div class="single-featured-item">
+                            <div class="featured-icon">
+                                <i class="fa fa-edit"></i>
+                            </div>
+                            <p>Je suis Mathéo Guillevic actuellement étudiant en But Informatique. Dans cette article vous trouverez toutes les informations nécéssaires pour me connaitre.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- single featured item -->
+                <!-- single featured item -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-featured-item-wrap">
+                        <h3><a href="#portfolio">Mes projets</a></h3>
+                        <div class="single-featured-item">
+                            <div class="featured-icon">
+                                <i class="fa fa-code"></i>
+                            </div>
+                            <p>Chacun de mes projets est recensé si joint, cliquez pour découvrir quelles sont mes dernières créations.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- single featured item -->
+                <!-- single featured item -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-featured-item-wrap">
+                        <h3><a href="#contact">Me contacter</a></h3>
+                        <div class="single-featured-item">
+                            <div class="featured-icon">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <p>Mes réseaux sont disponibles en bas de la page ou vous pouvez m'envoyer un mail via le formulaire.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- single featured item -->
+            </div>
+        </div>
+    </section>
+    <!-- ====== //Featured Area ====== -->
+
+    <!-- ====== About Area ====== -->
+    <section id="about" class="section-padding about-area bg-light">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="row justify-content-center">
+                <div class="col-lg-6 ">
+                    <div class="section-title text-center">
+                        <h2>PRéSENTATION</h2>
+                    </div>
+                </div>
+            </div>
+            <!-- //Section Title -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about-bg" style="background-image:url(assets/images/portrait.jpg)"></div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <h2>Je suis <span>Guillevic Mathéo</span></h2>
+                        <h4>Etudiant en seconde année de BUT informatique à l'UGA</h4>
+                        <h5>Mes activités</h5>
+                        <p>
+                            <ul>
+                                <li>Montage vidéo : je fais des vidéos compilation de mes gameplay avec mes collègues de jeu</li>
+                                <li>Lire des scans : lecture en anglais d’histoire irréel permettant de me changer les idées</li>
+                                <li>Jeux vidéo: je joue à tout type de jeu mais je préfère les mmorpg qui permettent une plus grande implication dans le jeu.</li>
+                            </ul>
+                        </p>
+
+                        <h5>Mes qualités</h5>
+                        je suis patient et j'aime prendre mon temps. De plus, je suis prévoyant dans les tâches à effectuer ce qui me permet d'avoir une bonne organisation
+
+                        <h5>Compétences transversales</h5>
+                        <p>Autonomie et Esprit critique: J’ai appris à faire du montage vidéo de manière autodidacte ce qui m'a permis de développer mon esprit critique en me remettant en question basé sur les avis de ceux qui regardent mes vidéos et leurs retours.</p>
+                        <p>Rigueur : J'ai fais du Judo permettant le développement d'une rigueure d'entrainement. Ce sport m'a aussi fais voyager avec les compétitions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====== // About Area ====== -->
+
+    <!-- ====== Portfolio Section ====== -->
+    
+        <section id="portfolio" class="section-padding pb-85 portfolio-area bg-light">
+            <div class="container">
+                <!-- Section Title -->
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 ">
+                        <div class="section-title text-center work-title">
+                            <h2>Mes projets</h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- //Section Title -->
+                <div class="row justify-content-center">
+                    <!-- Work List Menu-->
+                    <div class="col-lg-8">
+                        <div class="work-list text-center">
+                            <ul>
+                                <li class="filter" class="active" data-filter="all">Tout</li>
+                                <li class="filter" data-filter=".web">Développement Web</li>
+                                <li class="filter" data-filter=".app">Application</li>
+                                <li class="filter" data-filter=".mobile">Application mobile</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- // Work List Menu -->
+                </div>
+                <div class="row portfolio">
+                    <!-- Single Portfolio -->
+                    <div class="col-lg-4 col-md-6 mix app">
+                        <div class="single-portfolio" style="background-image: url(assets/images/portfolio/binder.jpeg)">
+                            <div class="portfolio-icon text-center">
+                                <button class="btn-project" data-lightbox='lightbox'><a href="stage.html"><i class="fas fa-expand-arrows-alt"></i></a></button>
+                            </div>
+                            <div class="portfolio-hover">
+                                <h4>Stage BUT2</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // Single Portfolio -->
+                    <!-- Single Portfolio -->
+                    <div class="col-lg-4 col-md-6 mix logo web">
+                        <div class="single-portfolio" style="background-image: url(assets/images/portfolio/Laboratory.png)">
+                            <div class="portfolio-icon text-center">
+                                <button class="btn-project" data-lightbox='lightbox'><a href="SAE3.html"><i class="fas fa-expand-arrows-alt"></i></a></button>
+                            </div>
+                            <div class="portfolio-hover">
+                                <h4>Enigmathique</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // Single Portfolio -->
+                    <!-- Single Portfolio -->
+                    <div class="col-lg-4 col-md-6 mix wp web mobile">
+                        <div class="single-portfolio" style="background-image: url(assets/images/portfolio/ap_accp.jpg)">
+                            <div class="portfolio-icon text-center">
+                                <button class="btn-project" data-lightbox='lightbox'><a href="SAE4.html"><i class="fas fa-expand-arrows-alt"></i></a></button>
+                            </div>
+                            <div class="portfolio-hover">
+                                <h4>Application de recherche de stage</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // Single Portfolio -->
+                </div>
+            </div>
         </section>
-        <section class="block_acc">
-            <a href="presentation.html">
-                <article>
-                    <figure>
-                        <img class="logo" src="img/icons8-about-me-100.png" alt="">
-                    </figure>
-                    <h3>Présentation</h3>
-                    <p>Je suis Mathéo Guillevic actuellement étudiant en But Informatique.
-                    Dans cette article vous trouverez toutes les informations nécéssaires pour me connaitre.
-                    </p>
-                </article>
-            </a>
-            <a href="mes-projets.html">
-                <article>
-                    <figure>
-                        <img class="logo" src="img/icons8-concept-100.png" alt="">
+    <!-- ====== // Portfolio Section ====== -->
 
-                    </figure>
-                    <h3>Mes Projets</h3>
-                    <p>Chacun de mes projets est recensé si joint, cliquez pour découvrir quelles sont mes dernières
-                        créations.</p>
-                </article>
-            </a>
-            <a href="me-contacter.html">
-                <article>
-                    <figure>
-                        <img class="logo" src="img/icons8-mail-contact-80.png" alt="">
-                    </figure>
-                    <h3>Me Contacter</h3>
-                    <p>Mes réseaux sont disponibles en bas de la page ou vous pouvez m'envoyer un mail via
-                        le formulaire.</p>
-                </article>
-            </a>
-        </section>
-    </main>
-    <footer>
-        <p>Guillevic Mathéo BUT Info 2022-2023</p>
+    <!-- ====== Contact Area ====== -->
+    <section id="contact" class="section-padding contact-section bg-light">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="row justify-content-center">
+                <div class="col-lg-6 ">
+                    <div class="section-title text-center">
+                        <h2>Me Contacter</h2>
+                        <p>Mail universitaire : Matheo.Guillevic@etu.univ-grenoble-alpes.fr</p>
+                        <p>Mail personnel : matheoguillevic@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <!-- //Section Title -->
+
+            <!-- Contact Form -->
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <!-- Form -->
+                    <form id="contact-form" action="mail.php" method="post" class="contact-form bg-white">
+                        <div class="row">
+                            <div class="col-lg-6 form-group">
+                                <input type="text" class="form-control" name="name" required placeholder="Nom-Prénom">
+                            </div>
+                            <div class="col-lg-6 form-group">
+                                <input type="email" class="form-control" name="email" required placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="subject" required placeholder="Sujet">
+                        </div>
+
+                        <div class="form-group">
+                            <textarea name="message" id="" class="form-control" required placeholder="Contenu du mail"></textarea>
+                        </div>
+                        <div class="form-btn text-center">
+                            <button class="button" type="submit">Envoyer</button>
+                            <p class="form-message"></p>
+                        </div>
+                    </form>
+                    <!-- // Form -->
+                </div>
+            </div>
+            <!-- // Contact Form -->
+        </div>
+    </section>
+    <!-- ====== // Contact Area ====== -->
 
 
+    <!-- ====== Footer Area ====== -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="footer-text">
+                        <p class="text-white">Portfolio 2024 Guillevic Mathéo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
+    <!-- ====== // Footer Area ====== -->
+
+
+     <!-- ====== ALL JS ====== -->
+   <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/lightbox.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.mixitup.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/fact.counter.js"></script>
+    <script src="assets/js/main.js"></script>
+    
+
 </body>
 
 </html>
