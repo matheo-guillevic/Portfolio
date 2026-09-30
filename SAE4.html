@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link href="style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Application de recherche de stage</title>
 </head>
 <body>
@@ -12,6 +12,20 @@
   <a href="index.html#portfolio"><img src="assets/images/prev.png"></a>
   <h1 class="h1 text-white">Amélioration d'une application de recherche de stage</h1>
 </nav>
+
+  <header class="project-intro">
+    <p class="project-kicker">SAE</p>
+    <h2>Application de recherche de stage</h2>
+    <p>Amélioration d'une application existante dédiée au suivi de recherche de stage, côté web et mobile.</p>
+    <div class="project-nav">
+      <a href="#carouselExampleControls">Aperçu</a>
+      <a href="#presentation">Présentation</a>
+      <a href="#competences">Compétences</a>
+      <a href="#bilan">Bilan</a>
+      <a href="#timeline">Timeline</a>
+    </div>
+  </header>
+
   <div class="main">
     <div class="slider col-lg-8">
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -44,33 +58,45 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-      <div class="explication"> 
-        
+    </div>
+    <aside class="project-overview col-lg-4">
+      <h2>En bref</h2>
+      <dl>
+        <dt>Période</dt>
+        <dd>Février 2024 - avril 2024</dd>
+        <dt>Contexte</dt>
+        <dd>SAE BUT2 en groupe</dd>
+        <dt>Rôle</dt>
+        <dd>Analyse, amélioration web, tests et optimisation</dd>
+        <dt>Technologies</dt>
+        <dd>Symfony, Java Android</dd>
+      </dl>
+    </aside>
+      <div id="presentation" class="explication col-lg-8">
+
         <h2 class="h2">Présentation</h2>
         <p>Ce projet consiste à améliorer une application existante, ici un carnet de suivi de recherche de stage. Cette
           application est construite en trois parties communicantes entre elles : une partie back-office web codée avec
           le framework PHP Symfony, une base de données postgres et une partie front-office mobile codée avec Java
           Android. L’objectif est d’évaluer la conception, l’ergonomie et les performances en se basant sur des principes
-          et des normes de qualité logicielle afin d’améliorer l’ensemble de ces points
-          <h3 class="h3">Back-office</h3>
-          Le site web est dédié au responsable des stages, l’administrateur du carnet des stages. Il gère les offres de
+          et des normes de qualité logicielle afin d’améliorer l’ensemble de ces points.</p>
+        <h3 class="h3">Back-office</h3>
+        <p>Le site web est dédié au responsable des stages, l’administrateur du carnet des stages. Il gère les offres de
           stage et les étudiants qui postulent à ces offres. Le back-office lui permet de consulter, ajouter et retirer des
           offres de stage. De plus, l’application web offre un tableau de bord pour visualiser tous les comptes et toutes
-          les candidatures en cours associées.
-          <h3 class="h3">Front-office</h3>
-          L’application mobile est à destination des étudiants. Ils consultent les offres répertoriées et suivent leurs
+          les candidatures en cours associées.</p>
+        <h3 class="h3">Front-office</h3>
+        <p>L’application mobile est à destination des étudiants. Ils consultent les offres répertoriées et suivent leurs
           candidatures. À l’aide de l’application mobile, l’étudiant peut marquer les offres qui l’intéressent, déclarer
           une candidature et faire son suivi jusqu’à l’obtention d’une réponse positive en mettant à jour l’état d’une
           candidature. Enfin, il peut finaliser la recherche en validant une candidature parmi l’ensemble des candidatures
           acceptées. L’application ne couvre pas la partie administrative du processus (envoi du CV/lettre de motivation,
-          planification de l’entretien, etc.).
-
-        </p>
-        <div class="member-tech-area">
+          planification de l’entretien, etc.).</p>
+        <div id="competences" class="member-tech-area">
             <div class="member-tech">
                 <h3 class="h3">Membres</h3>
                 <ul>
-                    <li>6 BUT2 parcours A</li>             
+                    <li>6 BUT2 parcours A</li>
                 </ul>
             </div>
             <div class="member-tech">
@@ -81,19 +107,16 @@
                 </div>
             </div>
         </div>
-        <h2 class="h2">Difficultés et réussites</h2>
-        <p>Nous avons réussi à améliorer le site en le rendant plus accessible. Cependant, nous avons été trop ambitieux avec l'application mobile, 
+        <h2 id="bilan" class="h2">Difficultés et réussites</h2>
+        <p>Nous avons réussi à améliorer le site en le rendant plus accessible. Cependant, nous avons été trop ambitieux avec l'application mobile,
           en tentant de la recréer de zéro, ce qui a entraîné le risque que rien ne soit terminé ou fonctionnel pour le rendu.</p>
-
-        </p>
       </div>
-    </div>
-    <div class="timeline-area col-lg-4">
+    <div id="timeline" class="timeline-area col-lg-4">
+      <h1 class="h1 timeline-heading">Timeline du projet</h1>
       <ul class="timeline">
-        <h1 class="h1">Timeline du projet</h1>
         <li class="timeline-event">
           <div class="timeline-title">
-            <label class="timeline-event-icon"></label>
+            <span class="timeline-event-icon"></span>
             <p class="timeline-event-thumbnail">5 février 2024 - 19 février 2024</p>
           </div>
           <div class="timeline-content">
@@ -107,7 +130,7 @@
         </li>
         <li class="timeline-event">
           <div class="timeline-title">
-            <label class="timeline-event-icon"></label>
+            <span class="timeline-event-icon"></span>
             <p class="timeline-event-thumbnail">4 mars 2024 - 25 mars 2024</p>
           </div>
           <div class="timeline-content">
@@ -120,7 +143,7 @@
         </li>
         <li class="timeline-event">
           <div class="timeline-title">
-            <label class="timeline-event-icon"></label>
+            <span class="timeline-event-icon"></span>
             <p class="timeline-event-thumbnail">29 mars 2024 - 11 avril 2024</p>
           </div>
           <div class="timeline-content">
@@ -134,23 +157,13 @@
         </li>
       </ul>
     </div>
-    
+
   </div>
-  
-  
-  
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
   <script src="assets/js/jquery-3.3.1.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
-  <script src="assets/js/lightbox.min.js"></script>
-  <script src="assets/js/owl.carousel.min.js"></script>
-  <script src="assets/js/jquery.mixitup.js"></script>
-  <script src="assets/js/wow.min.js"></script>
-  <script src="assets/js/fact.counter.js"></script>
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/slider.js"></script>
-    
+
 </body>
 </html>

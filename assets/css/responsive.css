@@ -40,6 +40,38 @@
         margin-top: 30px;
     }
 
+    .about-profile {
+        max-width: 420px;
+        margin: 0 auto;
+    }
+
+    .main {
+        padding-top: 30px;
+    }
+
+    .project-intro {
+        padding-top: 30px;
+    }
+
+    .project-intro h2 {
+        font-size: 34px;
+    }
+
+    .slider {
+        min-width: 0;
+        margin-bottom: 30px;
+    }
+
+    .project-overview {
+        min-width: 0;
+        margin-bottom: 30px;
+    }
+
+    .slider .carousel-inner,
+    .slider .carousel-item {
+        height: 380px;
+    }
+
     /*::::::::::::::::::::::::::::::::::::
        Service Section
     ::::::::::::::::::::::::::::::::::::*/
@@ -149,6 +181,106 @@
         font-size: 16px;
     }
 
+    .about-profile {
+        margin-bottom: 30px;
+    }
+
+    .about-avatar {
+        width: 150px;
+        height: 150px;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .main {
+        padding: 24px 15px;
+    }
+
+    .project-intro {
+        padding: 26px 15px 20px;
+    }
+
+    .project-intro h2 {
+        font-size: 28px;
+    }
+
+    .project-intro p:not(.project-kicker) {
+        font-size: 16px;
+    }
+
+    .project-nav a {
+        flex: 1 1 auto;
+        text-align: center;
+    }
+
+    .slider {
+        min-width: 0;
+        margin-bottom: 30px;
+    }
+
+    .project-overview {
+        min-width: 0;
+        padding: 22px;
+        margin-bottom: 30px;
+    }
+
+    .slider .carousel-inner,
+    .slider .carousel-item {
+        height: 280px;
+    }
+
+    .explication {
+        padding: 20px;
+    }
+
+    .explication h2 {
+        display: flex;
+        width: 100%;
+    }
+
+    .explication > p,
+    .explication > ul {
+        padding: 16px;
+    }
+
+    .explication > ul {
+        padding-left: 34px;
+    }
+
+    .member-tech-area {
+        flex-direction: column;
+    }
+
+    .member-tech {
+        padding: 18px;
+    }
+
+    .timeline-area {
+        padding: 26px 18px 20px;
+    }
+
+    .timeline:before {
+        left: 24px;
+    }
+
+    .timeline-event {
+        padding-left: 34px;
+    }
+
+    .timeline-event-icon {
+        left: 24px;
+    }
+
+    .timeline-heading {
+        font-size: 24px;
+    }
+
+    .timeline-content h3 {
+        font-size: 18px;
+    }
+
     /*::::::::::::::::::::::::::::::::::::
        Service Section
     ::::::::::::::::::::::::::::::::::::*/
@@ -230,7 +362,7 @@
     /*::::::::::::::::::::::::::::::::::::
        Contact Area 
     ::::::::::::::::::::::::::::::::::::*/
-    .contact-form {
+    .contact-card {
         padding: 15px;
     }
 }
@@ -293,6 +425,33 @@
         margin-top: 30px;
     }
 
+    .main {
+        padding-top: 30px;
+    }
+
+    .project-intro {
+        padding-top: 30px;
+    }
+
+    .slider {
+        min-width: 0;
+        margin-bottom: 30px;
+    }
+
+    .project-overview {
+        min-width: 0;
+        margin-bottom: 30px;
+    }
+
+    .slider .carousel-inner,
+    .slider .carousel-item {
+        height: 330px;
+    }
+
+    .member-tech-area {
+        flex-direction: column;
+    }
+
     /*::::::::::::::::::::::::::::::::::::
        Service Section
     ::::::::::::::::::::::::::::::::::::*/
@@ -334,7 +493,7 @@
     /*::::::::::::::::::::::::::::::::::::
        Contact Area 
     ::::::::::::::::::::::::::::::::::::*/
-    .contact-form {
+    .contact-card {
         padding: 30px;
     }
 }

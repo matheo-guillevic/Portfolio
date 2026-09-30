@@ -1,17 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link href="style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>Stage BUT2</title>
+    <title>Alternance BUT3 RFIDEES</title>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg fixed-top">
-    <a href="index.html#alternance"><img src="assets/images/prev.png"></a>
+    <a href="index.html#portfolio"><img src="assets/images/prev.png"></a>
     <h1 class="h1 text-white">Alternance BUT3 RFIDEES</h1>
   </nav>
+
+  <header class="project-intro">
+    <p class="project-kicker">Alternance</p>
+    <h2>Alternance BUT3 RFIDEES</h2>
+    <p>Développement d'outils de test, analyse de signaux et reconception électronique dans un contexte industriel.</p>
+    <div class="project-nav">
+      <a href="#carouselExampleControls">Aperçu</a>
+      <a href="#presentation">Présentation</a>
+      <a href="#competences">Compétences</a>
+      <a href="#bilan">Bilan</a>
+      <a href="#timeline">Timeline</a>
+    </div>
+  </header>
 
   <div class="main">
     <div class="slider col-lg-8">
@@ -21,10 +34,10 @@
             <img class="d-block w-100 m-auto" src="assets/images/portfolio/carte.jpg" alt="First slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block m-auto" src="assets/images/portfolio/PINOUT.png" alt="Second slide" style="width: 60%;">
+            <img class="d-block m-auto" src="assets/images/portfolio/PINOUT.png" alt="Second slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block m-auto" src="assets/images/portfolio/ARCHITECTURE.png" alt="Third slide" style="width: 70%;">
+            <img class="d-block m-auto" src="assets/images/portfolio/ARCHITECTURE.png" alt="Third slide">
           </div>
           <div class="carousel-item">
             <img class="d-block w-100 m-auto" src="assets/images/portfolio/cage.jpg" alt="Fourth slide">
@@ -45,7 +58,21 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-      <div class="explication"> 
+    </div>
+    <aside class="project-overview col-lg-4">
+      <h2>En bref</h2>
+      <dl>
+        <dt>Période</dt>
+        <dd>Septembre 2024 - avril 2025</dd>
+        <dt>Contexte</dt>
+        <dd>Alternance BUT3 chez RFIDEES</dd>
+        <dt>Rôle</dt>
+        <dd>Développement logiciel, tests CEM et embarqué</dd>
+        <dt>Technologies</dt>
+        <dd>C, Windev, STM32Cube</dd>
+      </dl>
+    </aside>
+      <div id="presentation" class="explication col-lg-8">
         <h2 class="h2">Présentation</h2>
         <p>
           Durant mon alternance chez RFIDEES, j’ai mené deux projets principaux aux enjeux techniques forts :
@@ -66,11 +93,11 @@
         <p>
           Cette alternance m’a permis d’aborder des domaines techniques variés, de renforcer mes compétences en développement embarqué, et de mieux comprendre les enjeux du monde industriel. Je poursuis désormais mon parcours en cycle ingénieur en alternance, avec l’ambition de participer à de nouveaux projets innovants.
         </p>
-        <div class="member-tech-area">
+        <div id="competences" class="member-tech-area">
             <div class="member-tech">
                 <h3 class="h3">Membres</h3>
                 <ul>
-                    <li>1 BUT3 parcours A</li>                    
+                    <li>1 BUT3 parcours A</li>
                 </ul>
             </div>
             <div class="member-tech">
@@ -82,20 +109,17 @@
                 </div>
             </div>
         </div>
-        <h2 class="h2">Difficultés et réussites</h2>
-        <p>La difficulté résidait dans la prise en main et la compréhension de l'analyseur de signaux et la compréhension des notions d'électronique, car je partais de zéro sans connaître la machine ni le protocole de communication utilisé. 
+        <h2 id="bilan" class="h2">Difficultés et réussites</h2>
+        <p>La difficulté résidait dans la prise en main et la compréhension de l'analyseur de signaux et la compréhension des notions d'électronique, car je partais de zéro sans connaître la machine ni le protocole de communication utilisé.
           mais aussi car le développement embarqué implique des notions d'électronique. J'ai réussi à mener à bien les recherches nécessaires pour découvrir progressivement les normes de CEM et comprendre les bus de communications du projet.</p>
-
-        </p>
       </div>
-    </div>
-    <div class="timeline-area col-lg-4">
+    <div id="timeline" class="timeline-area col-lg-4">
+      <h1 class="h1 timeline-heading">Timeline du projet</h1>
       <ul class="timeline">
-        <h1 class="h1">Timeline du projet</h1>
         <li class="timeline-event">
           <div class="timeline-title">
-            <label class="timeline-event-icon"></label>
-            <p class="timeline-event-thumbnail">semptembre 2024 - février 2025</p>
+            <span class="timeline-event-icon"></span>
+            <p class="timeline-event-thumbnail">septembre 2024 - février 2025</p>
           </div>
           <div class="timeline-content">
             <h3>Application pour la CEM</h3>
@@ -109,8 +133,8 @@
         </li>
         <li class="timeline-event">
           <div class="timeline-title">
-            <label class="timeline-event-icon"></label>
-            <p class="timeline-event-thumbnail">février 2025 - avril  2025</p>
+            <span class="timeline-event-icon"></span>
+            <p class="timeline-event-thumbnail">février 2025 - avril 2025</p>
           </div>
           <div class="timeline-content">
             <h3>Application pour tester des lecteurs UHF</h3>
@@ -125,8 +149,8 @@
         </li>
         <li class="timeline-event">
           <div class="timeline-title">
-            <label class="timeline-event-icon"></label>
-            <p class="timeline-event-thumbnail">février 2025 - avril  2025</p>
+            <span class="timeline-event-icon"></span>
+            <p class="timeline-event-thumbnail">février 2025 - avril 2025</p>
           </div>
           <div class="timeline-content">
             <h3>Reconception électronique</h3>
@@ -142,23 +166,13 @@
         </li>
       </ul>
     </div>
-    
+
   </div>
-  
-  
-  
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
   <script src="assets/js/jquery-3.3.1.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
-  <script src="assets/js/lightbox.min.js"></script>
-  <script src="assets/js/owl.carousel.min.js"></script>
-  <script src="assets/js/jquery.mixitup.js"></script>
-  <script src="assets/js/wow.min.js"></script>
-  <script src="assets/js/fact.counter.js"></script>
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/slider.js"></script>
-    
+
 </body>
 </html>
