@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link href="../style.css" rel="stylesheet">
+    <title>Rétro-ingénierie d'un tag RFID</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <a href="alternance-ingenieur-rfidees.html#projets"><img src="../assets/images/prev.png"></a>
+    <h1 class="h1 text-white">Rétro-ingénierie d'un tag RFID</h1>
+  </nav>
+
+  <header class="project-intro">
+    <p class="project-kicker">Alternance ingénieur RFIDEES</p>
+    <h2>Rétro-ingénierie de la structure et du chiffrement d'un tag RFID</h2>
+    <p>Analyse des échanges internes d'un lecteur RFID pour comprendre l'organisation mémoire d'un tag et préparer une migration sécurisée.</p>
+    <div class="project-nav">
+      <a href="#carouselExampleControls">Aperçu</a>
+      <a href="#presentation">Présentation</a>
+      <a href="#competences">Compétences</a>
+      <a href="#bilan">Bilan</a>
+      <a href="#timeline">Timeline</a>
+    </div>
+  </header>
+
+  <div class="main">
+    <div class="slider col-lg-8">
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="project-placeholder-slide">
+              <span>Visuel à ajouter</span>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <aside class="project-overview col-lg-4">
+      <h2>En bref</h2>
+      <dl>
+        <dt>Période</dt>
+        <dd>2025/2026</dd>
+        <dt>Contexte</dt>
+        <dd>Première année d'alternance ingénieur chez RFIDEES</dd>
+        <dt>Rôle</dt>
+        <dd>Analyse de bus, observation de protocole et rédaction d'expertise</dd>
+        <dt>Technologies</dt>
+        <dd>RFID, I2C, SPI, Windev</dd>
+      </dl>
+    </aside>
+
+    <div id="presentation" class="explication col-lg-8">
+      <h2 class="h2">Présentation</h2>
+      <p>Cette mission visait à assurer la pérennité d'un système dont le lecteur RFID d'origine n'était plus supporté. Il fallait comprendre l'organisation des données stockées dans les tags afin de préparer une migration vers une solution plus actuelle.</p>
+      <p>J'ai analysé les échanges I2C entre la carte mère et le microcontrôleur du lecteur, ainsi que les échanges SPI entre le microcontrôleur et l'ASIC RFID. Pour faciliter cette analyse, j'ai créé une application Windev permettant d'observer, traduire et rendre lisibles les communications capturées.</p>
+
+      <div id="competences" class="member-tech-area">
+        <div class="member-tech">
+          <h3 class="h3">Membres</h3>
+          <ul>
+            <li>1 apprenti ingénieur</li>
+          </ul>
+        </div>
+        <div class="member-tech">
+          <h3 class="h3">Compétences techniques</h3>
+          <div class="tech-area">
+            <img class="tech-icon" src="../assets/images/icon-tech/windev.jpg"> <p>Windev</p>
+            <p>I2C</p>
+            <p>SPI</p>
+            <p>RFID</p>
+          </div>
+        </div>
+      </div>
+
+      <h2 id="bilan" class="h2">Difficultés et réussites</h2>
+      <p>Le point le plus complexe était de passer d'observations bas niveau à une compréhension exploitable du système complet. La création d'un outil dédié m'a permis de mieux structurer les recherches et de produire une base technique utile pour la suite du projet.</p>
+    </div>
+
+    <div id="timeline" class="timeline-area col-lg-4">
+      <h1 class="h1 timeline-heading">Timeline du projet</h1>
+      <ul class="timeline">
+        <li class="timeline-event">
+          <div class="timeline-title">
+            <span class="timeline-event-icon"></span>
+            <p class="timeline-event-thumbnail">2025/2026</p>
+          </div>
+          <div class="timeline-content">
+            <h3>Observation</h3>
+            <ul>
+              <li>Analyse des bus I2C et SPI</li>
+              <li>Création d'un outil d'aide à la lecture</li>
+              <li>Manipulation de la machine pour varier les cas</li>
+            </ul>
+          </div>
+        </li>
+        <li class="timeline-event">
+          <div class="timeline-title">
+            <span class="timeline-event-icon"></span>
+            <p class="timeline-event-thumbnail">2025/2026</p>
+          </div>
+          <div class="timeline-content">
+            <h3>Synthèse</h3>
+            <ul>
+              <li>Étude de la structure mémoire</li>
+              <li>Formalisation des méthodes de recherche</li>
+              <li>Rédaction d'un rapport d'expertise</li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+</body>
+</html>

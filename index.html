@@ -143,7 +143,7 @@
 
     <!-- ====== About Area ====== -->
     <section id="about" class="section-padding about-area bg-light">
-        <div class="container">
+        <div class="container about-container">
             <!-- Section Title -->
             <div class="row justify-content-center">
                 <div class="col-lg-6 ">
@@ -153,23 +153,51 @@
                 </div>
             </div>
             <!-- //Section Title -->
-            <div class="row align-items-start">
-                <div class="col-lg-4">
+            <div class="about-layout">
+                <aside class="about-left">
                     <div class="about-profile">
                         <div class="about-avatar" style="background-image:url(assets/images/portrait.jpg)"></div>
-                        <h3>Mathéo Guillevic</h3>
-                        <p>Étudiant en BUT Informatique à l'UGA, curieux des projets concrets et des environnements techniques.</p>
                     </div>
-                </div>
-                <div class="col-lg-8">
+
+                    <div class="about-skills">
+                        <h5>Compétences techniques</h5>
+                        <div class="skill-groups">
+                            <div class="skill-group">
+                                <strong>Embarqué</strong>
+                                <span>STM32</span>
+                                <span>I2C</span>
+                                <span>UART</span>
+                                <span>SPI</span>
+                            </div>
+                            <div class="skill-group">
+                                <strong>Programmation</strong>
+                                <span>Java</span>
+                                <span>JavaScript</span>
+                                <span>C</span>
+                                <span>C++</span>
+                                <span>Python</span>
+                                <span>Windev</span>
+                            </div>
+                            <div class="skill-group">
+                                <strong>Outils & données</strong>
+                                <span>PostgreSQL</span>
+                                <span>Git</span>
+                                <span>Linux</span>
+                                <span>Autodesk Eagle</span>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+                <div class="about-center">
                     <div class="about-content">
                         <h2>Je suis <span>Mathéo Guillevic</span></h2>
-                        <h4>Étudiant en informatique, tourné vers le développement logiciel et les projets utiles.</h4>
+                        <h4>Apprenti ingénieur en systèmes embarqués, tourné vers le développement logiciel, l'électronique et les projets utiles.</h4>
                         <p>J'aime comprendre comment les choses fonctionnent, prendre le temps de construire proprement et avancer avec une organisation claire. Mes expériences en projet, en stage et en alternance m'ont appris à chercher par moi-même, à analyser les problèmes et à ajuster mon travail grâce aux retours.</p>
                         <p>En dehors du code, je garde aussi une place importante pour les activités qui me font bouger ou qui stimulent ma créativité. Elles m'aident à prendre du recul, à rester patient et à continuer d'apprendre.</p>
 
                         <div class="about-grid">
-                            <div class="about-panel">
+                            <div class="about-panel about-panel-wide">
                                 <h5>Ma façon de travailler</h5>
                                 <p>Je suis patient, prévoyant et rigoureux. J'aime préparer les étapes importantes avant de me lancer, tout en gardant assez de souplesse pour m'adapter quand un projet évolue.</p>
                             </div>
@@ -183,17 +211,60 @@
                                     <span>Lecture de scans</span>
                                 </div>
                             </div>
-                            <div class="about-panel about-panel-wide">
+                            <div class="about-panel">
                                 <h5>Ce que j'aimerais découvrir</h5>
                                 <div class="activity-tags">
                                     <span>Parapente</span>
                                     <span>VTT de descente</span>
                                     <span>Escalade</span>
+                                    <span>Modélrisation/Impression 3D</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <aside class="about-right">
+                    <div class="formation-area">
+                        <h5>Parcours</h5>
+                        <div class="formation-timeline">
+                            <div class="formation-item">
+                                <span>2025 - 2028</span>
+                                <div>
+                                    <h6>ESISAR - Ingénieur</h6>
+                                    <p>Spécialité Systèmes Électroniques Communicants Embarqués, UGA - Grenoble INP ESISAR, Valence.</p>
+                                </div>
+                            </div>
+                            <div class="formation-item experience-item">
+                                <span>Depuis 2025</span>
+                                <div>
+                                    <h6>Alternance ingénieur - RFIDEES</h6>
+                                    <p>Développement embarqué, conception de solutions RFID et travail autour de cartes électroniques industrielles.</p>
+                                </div>
+                            </div>
+                            <div class="formation-item">
+                                <span>2022 - 2025</span>
+                                <div>
+                                    <h6>BUT Informatique</h6>
+                                    <p>Parcours Réalisation d'Applications : Conception, Réalisation et Validation, UGA - IUT 2, Grenoble.</p>
+                                </div>
+                            </div>
+                            <div class="formation-item experience-item">
+                                <span>2024 - 2025</span>
+                                <div>
+                                    <h6>Stage & alternance BUT - RFIDEES</h6>
+                                    <p>Automatisation de tests climatiques, tests CEM et développement d'outils de pilotage pour lecteurs RFID.</p>
+                                </div>
+                            </div>
+                            <div class="formation-item">
+                                <span>2021 - 2022</span>
+                                <div>
+                                    <h6>Bac - mention bien</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
             </div>
         </div>
     </section>
@@ -219,8 +290,8 @@
                             <ul>
                                 <li class="filter active" data-filter="all">Tout</li>
                                 <li class="filter" data-filter=".web">Développement Web</li>
-                                <li class="filter" data-filter=".app">Application</li>
-                                <li class="filter" data-filter=".mobile">Application mobile</li>
+                                <li class="filter" data-filter=".app">Développement logiciel</li>
+                                <li class="filter" data-filter=".embedded">Électronique & systèmes embarqués</li>
                             </ul>
                         </div>
                     </div>
@@ -231,7 +302,7 @@
                     <div class="col-lg-4 col-md-6 mix app">
                         <div class="single-portfolio" style="background-image: url(assets/images/portfolio/binder.jpeg)">
                             <div class="portfolio-icon text-center">
-                                <a class="btn-project" href="stage.html"><i class="fas fa-expand-arrows-alt"></i></a>
+                                <a class="btn-project" href="projets/stage-but2-rfidees.html"><i class="fas fa-expand-arrows-alt"></i></a>
                             </div>
                             <div class="portfolio-hover">
                                 <h4>Stage BUT2</h4>
@@ -243,7 +314,7 @@
                     <div class="col-lg-4 col-md-6 mix logo web">
                         <div class="single-portfolio" style="background-image: url(assets/images/portfolio/Laboratory.png)">
                             <div class="portfolio-icon text-center">
-                                <a class="btn-project" href="SAE3.html"><i class="fas fa-expand-arrows-alt"></i></a>
+                                <a class="btn-project" href="projets/enigmathique.html"><i class="fas fa-expand-arrows-alt"></i></a>
                             </div>
                             <div class="portfolio-hover">
                                 <h4>Enigmathique</h4>
@@ -252,10 +323,10 @@
                     </div>
                     <!-- // Single Portfolio -->
                     <!-- Single Portfolio -->
-                    <div class="col-lg-4 col-md-6 mix wp web mobile">
+                    <div class="col-lg-4 col-md-6 mix wp web app">
                         <div class="single-portfolio" style="background-image: url(assets/images/portfolio/ap_accp.jpg)">
                             <div class="portfolio-icon text-center">
-                                <a class="btn-project" href="SAE4.html"><i class="fas fa-expand-arrows-alt"></i></a>
+                                <a class="btn-project" href="projets/application-recherche-stage.html"><i class="fas fa-expand-arrows-alt"></i></a>
                             </div>
                             <div class="portfolio-hover">
                                 <h4>Application de recherche de stage</h4>
@@ -264,13 +335,133 @@
                     </div>
                     <!-- // Single Portfolio -->
                      <!-- Single Portfolio -->
-                    <div class="col-lg-4 col-md-6 mix wp app">
+                    <div class="col-lg-4 col-md-6 mix wp app embedded">
                         <div class="single-portfolio" style="background-image: url(assets/images/portfolio/EXA.jpeg)">
                             <div class="portfolio-icon text-center">
-                                <a class="btn-project" href="alternanceBUT.html"><i class="fas fa-expand-arrows-alt"></i></a>
+                                <a class="btn-project" href="projets/alternance-but-rfidees.html"><i class="fas fa-expand-arrows-alt"></i></a>
                             </div>
                             <div class="portfolio-hover">
                                 <h4>Alternance BUT3 RFIDEES</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // Single Portfolio -->
+                    <!-- Single Portfolio -->
+                    <div class="col-lg-4 col-md-6 mix app">
+                        <div class="single-portfolio" style="background-image: url(assets/images/portfolio/SOLUSCOPE-13-56-ETSI.png)">
+                            <div class="portfolio-icon text-center">
+                                <a class="btn-project" href="projets/application-test-cem.html"><i class="fas fa-expand-arrows-alt"></i></a>
+                            </div>
+                            <div class="portfolio-hover">
+                                <h4>Application de test CEM</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // Single Portfolio -->
+                    <!-- Single Portfolio -->
+                    <div class="col-lg-4 col-md-6 mix app">
+                        <div class="single-portfolio" style="background-image: url(assets/images/portfolio/cage.jpg)">
+                            <div class="portfolio-icon text-center">
+                                <a class="btn-project" href="projets/tests-lecteurs-uhf.html"><i class="fas fa-expand-arrows-alt"></i></a>
+                            </div>
+                            <div class="portfolio-hover">
+                                <h4>Tests de lecteurs UHF</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // Single Portfolio -->
+                    <!-- Single Portfolio -->
+                    <div class="col-lg-4 col-md-6 mix app embedded">
+                        <div class="single-portfolio" style="background-image: url(assets/images/portfolio/carte.jpg)">
+                            <div class="portfolio-icon text-center">
+                                <a class="btn-project" href="projets/reconception-automate-coloration.html"><i class="fas fa-expand-arrows-alt"></i></a>
+                            </div>
+                            <div class="portfolio-hover">
+                                <h4>Reconception d'un automate de coloration</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // Single Portfolio -->
+                    <!-- Single Portfolio -->
+                    <div class="col-lg-4 col-md-6 mix app embedded">
+                        <div class="single-portfolio project-placeholder">
+                            <div class="portfolio-icon text-center">
+                                <a class="btn-project" href="projets/alternance-ingenieur-rfidees.html"><i class="fas fa-expand-arrows-alt"></i></a>
+                            </div>
+                            <div class="portfolio-hover">
+                                <h4>Alternance Ingénieur RFIDEES</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // Single Portfolio -->
+                    <!-- Single Portfolio -->
+                    <div class="col-lg-4 col-md-6 mix app">
+                        <div class="single-portfolio project-placeholder">
+                            <div class="portfolio-icon text-center">
+                                <a class="btn-project" href="projets/retro-ingenierie-qr-codes.html"><i class="fas fa-expand-arrows-alt"></i></a>
+                            </div>
+                            <div class="portfolio-hover">
+                                <h4>Rétro-ingénierie de QR codes</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // Single Portfolio -->
+                    <!-- Single Portfolio -->
+                    <div class="col-lg-4 col-md-6 mix app embedded">
+                        <div class="single-portfolio project-placeholder">
+                            <div class="portfolio-icon text-center">
+                                <a class="btn-project" href="projets/retro-ingenierie-tag-rfid.html"><i class="fas fa-expand-arrows-alt"></i></a>
+                            </div>
+                            <div class="portfolio-hover">
+                                <h4>Rétro-ingénierie d'un tag RFID</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // Single Portfolio -->
+                    <!-- Single Portfolio -->
+                    <div class="col-lg-4 col-md-6 mix app">
+                        <div class="single-portfolio project-placeholder">
+                            <div class="portfolio-icon text-center">
+                                <a class="btn-project" href="projets/gestion-stock-composants.html"><i class="fas fa-expand-arrows-alt"></i></a>
+                            </div>
+                            <div class="portfolio-hover">
+                                <h4>Gestion de stock de composants</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // Single Portfolio -->
+                    <!-- Single Portfolio -->
+                    <div class="col-lg-4 col-md-6 mix app embedded">
+                        <div class="single-portfolio project-placeholder">
+                            <div class="portfolio-icon text-center">
+                                <a class="btn-project" href="projets/modding-eagle.html"><i class="fas fa-expand-arrows-alt"></i></a>
+                            </div>
+                            <div class="portfolio-hover">
+                                <h4>Modding EAGLE</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // Single Portfolio -->
+                    <!-- Single Portfolio -->
+                    <div class="col-lg-4 col-md-6 mix embedded">
+                        <div class="single-portfolio project-placeholder">
+                            <div class="portfolio-icon text-center">
+                                <a class="btn-project" href="projets/projet-terrain-cnrs.html"><i class="fas fa-expand-arrows-alt"></i></a>
+                            </div>
+                            <div class="portfolio-hover">
+                                <h4>Solution RFID et radio terrain</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // Single Portfolio -->
+                    <!-- Single Portfolio -->
+                    <div class="col-lg-4 col-md-6 mix embedded">
+                        <div class="single-portfolio project-placeholder">
+                            <div class="portfolio-icon text-center">
+                                <a class="btn-project" href="projets/formation-routage-soudure-schema.html"><i class="fas fa-expand-arrows-alt"></i></a>
+                            </div>
+                            <div class="portfolio-hover">
+                                <h4>Formation routage, soudure et schéma</h4>
                             </div>
                         </div>
                     </div>

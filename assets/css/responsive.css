@@ -40,9 +40,17 @@
         margin-top: 30px;
     }
 
+    .about-container {
+        width: 90%;
+    }
+
     .about-profile {
         max-width: 420px;
         margin: 0 auto;
+    }
+
+    .about-layout {
+        grid-template-columns: 1fr;
     }
 
     .main {
@@ -181,6 +189,10 @@
         font-size: 16px;
     }
 
+    .about-container {
+        width: 100%;
+    }
+
     .about-profile {
         margin-bottom: 30px;
     }
@@ -191,6 +203,10 @@
     }
 
     .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-layout {
         grid-template-columns: 1fr;
     }
 
